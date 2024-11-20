@@ -17,9 +17,7 @@ class Stack {
 public:
     Node *head, *tail;
 
-    Stack(){
-        this->head = 0, this->tail = 0;
-    }
+    Stack() : head(0), tail(0) {}
 
     Stack(Stack<T> &other){
         this->head = other.head;
